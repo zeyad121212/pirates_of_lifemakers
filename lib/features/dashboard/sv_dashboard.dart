@@ -1,0 +1,28 @@
+import 'package:flutter/material.dart';
+import '../trainer/screens/nominate_trainer_screen.dart';
+
+class SvDashboard extends StatelessWidget {
+  const SvDashboard({Key? key, required String userId}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    // For demo, use a placeholder requestId. In production, select from pending requests.
+    const String requestId = 'demo_request_id';
+    return Scaffold(
+      appBar: AppBar(title: const Text('Supervisor Dashboard')),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => const NominateTrainerScreen(requestId: requestId),
+              ),
+            );
+          },
+          child: const Text('Nominate Trainer'),
+        ),
+      ),
+    );
+  }
+}

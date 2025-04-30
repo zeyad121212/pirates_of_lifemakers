@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "270705196635",
+    "project_id": "pirates-of-lifemakers-1ad82",
+    "storage_bucket": "pirates-of-lifemakers-1ad82.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270705196635:android:433c0c659db8dfcc85097e",
+        "android_client_info": {
+          "package_name": "org.lifemakers.pirates"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaVQee732eaou3riPYGgoxualqMnWsArE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

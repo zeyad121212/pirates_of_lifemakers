@@ -1,0 +1,24 @@
+import 'package:flutter/material.dart';
+import '../statistics/screens/statistics_screen.dart';
+
+class MbDashboard extends StatelessWidget {
+  const MbDashboard({Key? key, required String userId}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Board Member Dashboard')),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => const StatisticsScreen()),
+            );
+          },
+          child: const Text('View Training Statistics'),
+        ),
+      ),
+    );
+  }
+}
